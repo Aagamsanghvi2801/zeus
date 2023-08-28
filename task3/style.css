@@ -1,0 +1,55 @@
+body,html {
+    background-color: lightgray;
+    height: 98%;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 10px 5px 8px 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 3fr 3fr 1.5fr;
+    height: 100%;
+    grid-gap: 3px;
+    grid-template-areas: 
+    "h h h"
+    "s c c"
+    "s i j"
+    "f f f";
+    
+}
+
+.grid-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header {
+    grid-area: h;
+    background-color: #9881f5;
+    border: 1px solid black;
+}
+
+.content-1{
+    grid-area: c;
+    background: linear-gradient(to bottom right, #1a237e, #64b5f6);
+    border: 1px solid black;
+}
+
+.content-i{
+    background: linear-gradient(to bottom right, #1a237e, #64b5f6);
+    border: 1px solid black;
+}
+
+.sidebar {
+    grid-area: s;
+    background-color: lightseagreen;
+    border: 1px solid black;
+}
+.footer{
+    grid-area: f;
+    background-color: #9881f5;
+    border: 1px solid black;
+}
