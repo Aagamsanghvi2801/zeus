@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/dashboard.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header start-->
+        <div class="header">
+            <div class="left">
+                <img src="assets/icons/logo used in header.svg" class="logo-img">
+            </div>
+            <div class="right">
+                <ul class="navbar">
+                    <a href="#">
+                        <li class="active-white">DASHBOARD</li>
+                        <a href="#">
+                            <li>CONTENT</li>
+                        </a>
+                        <a href="#">
+                            <li>USERS</li>
+                        </a>
+                        <a href="#">
+                            <li>REPORTS</li>
+                        </a>
+                        <a href="#">
+                            <li>ADMIN</li>
+                        </a>
+                </ul>
+                <div class="icon-link-div">
+                    <div class='alert-icon'>
+                        <img src="assets/icons/alerts.svg" alt="">
+                        <span class="dark-badge">2</span>
+                    </div>
+                    <div class='announcement-icon'>
+                        <img src="assets/icons/announcements.svg" alt="">
+                        <span class="dark-badge">1</span>
+                    </div>
+                    <div>
+                        <img src="assets/icons/account_circle.svg" alt="">
+                        <span class="light-badge">T</span>
+                    </div>
+                </div>
+                <div class="hamburger-icon">
+                    <img src="assets/icons/hamburger-menu.svg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        <!-- Header End  -->
+        <!-- Content Start -->
+        <div class="content">
+
+            <div class="tabbar">
+                <div class="tab active-black">
+                    <div class="center-div">
+                        <img style="width: 21px; height: 32px;" src="assets/icons/courses.svg" alt="">
+                        <span style="font-size: 24px;" class="bold" id="courseCount"></span>Courses
+                    </div>
+                </div>
+                <div class="tab">
+                    <div class="center-div">
+                        <img style="width: 21px; height: 32px;" src="assets/icons/classes.svg" alt="">
+                        <span style="font-size: 24px;" class="bold">4</span>Classes
+                    </div>
+                </div>
+            </div>
+
+            <div class="result">
+                <div class="left-result">
+                    Showing 4 of 4 courses
+                </div>
+                <div class="right-result">
+                    Sort By :
+                    <select name="course" id="course">
+                        <option value="Course Name">Course Name</option>
+                    </select>
+                    <img class="sort-icon" src="assets/icons/sort.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="card-display">
+            </div>
+        </div>
+        <!-- Content End  -->
+
+        <div class="menu">
+            <a href="#" class="rightBorder">About</a>
+            <a href="#">Contect Us</a>
+        </div>
+
+        <!-- Footer Start  -->
+
+        <div class="footer">
+            <img src="assets/icons/logo used in footer.svg" class="footer-logo logo-img">
+            <p> Copyright @ 2020-2021 Zeus Systems Pvt. Ltd. All right reserved</p>
+        </div>
+
+        <!-- Footer End -->
+    </div>
+</body>
+<script src="./script/index.js"></script>
+
+</html>
